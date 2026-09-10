@@ -1,0 +1,117 @@
+footer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 55px 60px 50px 60px;
+  position: sticky;
+  font-size: 18px;
+  bottom: 0;
+  border-radius: 45px 45px 0 0;
+}
+
+.f-top-conteiner {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  height: 30px;
+}
+
+.social-media button {
+  background-color: black;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.f-top-conteiner a {
+  text-decoration: underline;
+}
+
+/* middle-conteiner */
+
+.f-middle-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  /* justify-content: space-around; */
+  padding-top: 66px;
+}
+
+.f-middle-conteiner-text p {
+  padding: 0;
+  margin: 0;
+}
+
+.f-middle-conteiner-text {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.f-middle-conteiner-div {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.f-middle-conteiner-email {
+  display: flex;
+  border-radius: 14px;
+  gap: 20px;
+  background-color: #292a32;
+  padding: 58px 40px;
+}
+
+.f-middle-conteiner-email input {
+  padding: 22px 35px;
+  border-radius: 14px;
+  font-size: 18px;
+
+  background-color: inherit;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  outline: none;
+}
+
+.f-middle-conteiner button {
+  border-radius: 14px;
+  padding: 20px 35px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.f-middle-conteiner-email input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.f-bottom-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 24px;
+  margin-top: 40px; /* отступ от блока с email выше */
+}
+
+.f-bottom-conteiner p {
+  margin: 0;
+}
+
+.f-bottom-conteiner a {
+  color: inherit;
+  text-decoration: underline;
+}

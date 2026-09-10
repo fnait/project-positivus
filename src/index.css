@@ -1,3 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 60px 100px 0 100px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 /* headings */
 h1 {
   font-size: 60px;
@@ -55,12 +68,26 @@ p {
 
 .color-green {
   background-color: #b9ff66;
+  color: #000000;
 }
 
 .color-black {
   background-color: #191a23;
+  color: #ffffff;
 }
 
 .color-white {
   background-color: #f3f3f3;
+  color: #000000;
+}
+
+/* navigation settings */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: inherit;
 }
