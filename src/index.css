@@ -1,0 +1,66 @@
+/* headings */
+h1 {
+  font-size: 60px;
+  font-weight: 500px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+/* phone adaptation */
+
+.h1-phone {
+  font-size: 43px;
+  font-weight: 500px;
+}
+
+.h2-phone {
+  font-size: 36px;
+  font-weight: 500px;
+}
+
+.h3-phone {
+  font-size: 26px;
+  font-weight: 500px;
+}
+
+.h4-phone {
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+.p-phone {
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+/* colors */
+
+.color-green {
+  background-color: #b9ff66;
+}
+
+.color-black {
+  background-color: #191a23;
+}
+
+.color-white {
+  background-color: #f3f3f3;
+}
