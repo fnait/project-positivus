@@ -7,7 +7,7 @@ import lg3 from "../img/card6/card6-img3-twitter-x.svg";
 function Footer() {
   return (
     <>
-      <footer className="color-black">
+      <footer>
         <div className="f-top-conteiner">
           <img
             src={wLogo}
@@ -52,14 +52,17 @@ function Footer() {
         </div>
         <div className="f-middle-conteiner">
           <div className="f-middle-conteiner-text">
-            <div className="f-middle-conteiner-div color-green">Contact us</div>
-
-            <p>Email: info@positivus.com</p>
-            <p>Phone: 555-567-8901</p>
-            <p>
-              Address: 1234 Main St <br />
-              Moonstone City, Stardust State 12345
-            </p>
+            <div className="f-middle-conteiner-div color-green">
+              <h4>Contact us</h4>
+            </div>
+            <div className="f-middle-conteiner-left">
+              <p>Email: info@positivus.com</p>
+              <p>Phone: 555-567-8901</p>
+              <p>
+                Address: 1234 Main St <br />
+                Moonstone City, Stardust State 12345
+              </p>
+            </div>
           </div>
           <div className="f-middle-conteiner-email">
             <input type="email" placeholder="Email" />

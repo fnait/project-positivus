@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,72 +19,81 @@ body {
   font-style: normal;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* headings */
 h1 {
   font-size: 60px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 40px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 30px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 20px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 p {
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 /* phone adaptation */
 
 .h1-phone {
   font-size: 43px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .h2-phone {
   font-size: 36px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .h3-phone {
   font-size: 26px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .h4-phone {
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .p-phone {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 /* colors */
 
 .color-green {
+  font-family: "Space Grotesk", sans-serif;
   background-color: #b9ff66;
   color: #000000;
 }
 
 .color-black {
+  font-family: "Space Grotesk", sans-serif;
   background-color: #191a23;
   color: #ffffff;
 }
 
 .color-white {
+  font-family: "Space Grotesk", sans-serif;
   background-color: #f3f3f3;
   color: #000000;
 }

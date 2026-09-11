@@ -1,0 +1,30 @@
+.c1-body {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+
+  padding: 70px 0;
+}
+
+.c1-text {
+  display: flex;
+  flex-flow: column;
+  gap: 35px;
+  align-items: baseline;
+}
+
+.c1-text button {
+  border-radius: 14px;
+  font-weight: 400;
+
+  padding: 20px 35px;
+}
+
+.c1-text button:hover {
+  background-color: #242532;
+}
+
+.c1-text h4 {
+  font-weight: 400;
+  line-height: 28px;
+}

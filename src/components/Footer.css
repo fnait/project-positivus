@@ -2,11 +2,21 @@ footer {
   display: flex;
   flex-direction: column;
 
+  background-color: #191a23;
+  color: #ffffff;
+
   padding: 55px 60px 50px 60px;
   position: sticky;
-  font-size: 18px;
   bottom: 0;
   border-radius: 45px 45px 0 0;
+
+  font-size: 18px;
+  font-weight: 300;
+}
+
+footer p {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .f-top-conteiner {
@@ -45,7 +55,7 @@ footer {
   flex-direction: row;
   align-items: center;
 
-  /* justify-content: space-around; */
+  justify-content: space-between;
   padding-top: 66px;
 }
 
@@ -62,11 +72,10 @@ footer {
 }
 
 .f-middle-conteiner-div {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-weight: 600;
-  width: fit-content;
+  display: flex;
+  border-radius: 7px;
+  padding: 0 7px;
+  margin: 0;
 }
 
 .f-middle-conteiner-email {
@@ -80,7 +89,9 @@ footer {
 .f-middle-conteiner-email input {
   padding: 22px 35px;
   border-radius: 14px;
+
   font-size: 18px;
+  font-weight: 300;
 
   background-color: inherit;
   color: #ffffff;
@@ -92,13 +103,25 @@ footer {
   border-radius: 14px;
   padding: 20px 35px;
   font-size: 20px;
+  font-weight: 400;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+.f-middle-conteiner button:hover {
+  background-color: #a9e75d;
 }
 
 .f-middle-conteiner-email input::placeholder {
   color: #ffffff;
   opacity: 1;
+}
+
+.f-middle-conteiner-left {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
 }
 
 .f-bottom-conteiner {
