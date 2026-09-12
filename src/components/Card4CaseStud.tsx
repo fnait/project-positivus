@@ -1,4 +1,3 @@
-import React from "react";
 import imgArrow from "../img/card2/card2-arrow.svg";
 
 function Card4CaseStud() {

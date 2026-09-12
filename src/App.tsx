@@ -6,6 +6,7 @@ import Card2Logos from "./components/Card2Logos";
 import CardTopic from "./components/CardTopic";
 import Card3Services from "./components/Card3Services";
 import Card4CaseStud from "./components/Card4CaseStud";
+import Card5WorkingProcess from "./components/Card5WorkingProcess";
 
 function App() {
   return (
@@ -25,7 +26,6 @@ function App() {
         padd_bot={70}
       />
       <Card3Services />
-
       <CardTopic
         text1="Case Studies"
         text2={
@@ -37,9 +37,7 @@ function App() {
         }
         padd_bot={80}
       />
-
       <Card4CaseStud />
-
       <CardTopic
         text1="Our Working Process"
         text2={
@@ -50,7 +48,18 @@ function App() {
         }
         padd_bot={80}
       />
+      <Card5WorkingProcess />
 
+      <CardTopic
+        text1="Team"
+        text2={
+          <>
+            Meet the skilled and experienced team behind our <br />
+            successful digital marketing strategies
+          </>
+        }
+        padd_bot={80}
+      />
       {/* <Footer /> */}
     </>
   );
