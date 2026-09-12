@@ -2,14 +2,15 @@ interface CardTopicProps {
   text1: string;
   text2: React.ReactNode;
   padd_bot: number;
+  padd_top: number;
 }
 
-function CardTopic({ text1, text2, padd_bot }: CardTopicProps) {
+function CardTopic({ text1, text2, padd_bot, padd_top }: CardTopicProps) {
   return (
     <div
       style={{
         display: "flex",
-        padding: `140px 0  ${padd_bot}px 0`,
+        padding: `${padd_top}px 0  ${padd_bot}px 0`,
         gap: "40px",
       }}
     >

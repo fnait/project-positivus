@@ -7,6 +7,7 @@ import CardTopic from "./components/CardTopic";
 import Card3Services from "./components/Card3Services";
 import Card4CaseStud from "./components/Card4CaseStud";
 import Card5WorkingProcess from "./components/Card5WorkingProcess";
+import Card6Team from "./components/Card6Team";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             help businesses grow and succeed online. These services include:
           </>
         }
+        padd_top={140}
         padd_bot={70}
       />
       <Card3Services />
@@ -35,6 +37,7 @@ function App() {
             Success through Our Case Studies
           </>
         }
+        padd_top={140}
         padd_bot={80}
       />
       <Card4CaseStud />
@@ -46,6 +49,7 @@ function App() {
             Your Business Goals
           </>
         }
+        padd_top={140}
         padd_bot={80}
       />
       <Card5WorkingProcess />
@@ -58,6 +62,33 @@ function App() {
             successful digital marketing strategies
           </>
         }
+        padd_top={140}
+        padd_bot={80}
+      />
+
+      <Card6Team />
+
+      <CardTopic
+        text1="Testimonials"
+        text2={
+          <>
+            Hear from Our Satisfied Clients: Read Our Testimonials <br />
+            successful digital marketing strategies
+          </>
+        }
+        padd_top={100}
+        padd_bot={80}
+      />
+
+      <CardTopic
+        text1="Contact Us"
+        text2={
+          <>
+            Connect with Us: Let's Discuss Your <br />
+            Digital Marketing Needs
+          </>
+        }
+        padd_top={100}
         padd_bot={80}
       />
       {/* <Footer /> */}
