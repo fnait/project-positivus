@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Card1Rupor from "./components/Card1Rupor";
 import Card2Logos from "./components/Card2Logos";
 import CardTopic from "./components/CardTopic";
@@ -8,6 +8,8 @@ import Card3Services from "./components/Card3Services";
 import Card4CaseStud from "./components/Card4CaseStud";
 import Card5WorkingProcess from "./components/Card5WorkingProcess";
 import Card6Team from "./components/Card6Team";
+import Card7Testimonials from "./components/Card7Testimonials";
+import Card8ContactUs from "./components/Card8ContactUs";
 
 function App() {
   return (
@@ -79,6 +81,7 @@ function App() {
         padd_top={100}
         padd_bot={80}
       />
+      <Card7Testimonials />
 
       <CardTopic
         text1="Contact Us"
@@ -88,10 +91,13 @@ function App() {
             Digital Marketing Needs
           </>
         }
-        padd_top={100}
+        padd_top={140}
         padd_bot={80}
       />
-      {/* <Footer /> */}
+
+      <Card8ContactUs />
+
+      <Footer />
     </>
   );
 }
