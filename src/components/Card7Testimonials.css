@@ -56,3 +56,49 @@
   justify-content: center;
   gap: 50px;
 }
+
+.reviews-track {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  width: 606px;
+  flex-shrink: 0;
+
+  transition: transform 0.4s ease;
+}
+
+.reviews-track > div {
+  flex: 0 0 606px;
+}
+
+.reviews-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 564px;
+  max-width: calc(100% - 40px);
+  margin-top: 60px;
+}
+
+.reviews-points {
+  display: flex;
+  gap: 12px;
+}
+
+.reviews-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.reviews-controls button:disabled {
+  cursor: default;
+}
+
+.reviews-controls img {
+  display: block;
+}

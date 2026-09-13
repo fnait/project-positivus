@@ -52,7 +52,22 @@ function Card8ContactUs() {
           </label>
         </div>
 
-        {!isActive && <div>text 2</div>}
+        {!isActive && (
+          <div
+            className="contact-fields"
+            style={{ display: isActive ? "none" : "flex" }}
+          >
+            <label className="contact-field">
+              Name
+              <input type="text" name="name" placeholder="Name" />
+            </label>
+
+            <label className="contact-field">
+              Message*
+              <textarea name="message" placeholder="Message" required />
+            </label>
+          </div>
+        )}
 
         <button type="button" className="contact-submit color-black">
           Send Message

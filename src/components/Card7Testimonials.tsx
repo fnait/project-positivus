@@ -1,11 +1,33 @@
+import { useState } from "react";
 import "./Card7Testimonials.css";
 import arrowCanSlide from "../img/card8/card8-arrow-can-slide.svg";
-import arrowCanNOTSlide from "../img/card8/card8-arrow-can-not-slide.svg";
+import arrowCanNOTSlide from "../img/card8/card8-arrow-cant-slide.svg";
 import pointActive from "../img/card8/card8-point-active.svg";
 import pointUnactive from "../img/card8/card8-point-unactive.svg";
 
 function Card7Testimonials() {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const reviewCount = 3;
+  const slideStep = 606 + 50;
+
+  const canPrev = activeIndex > 0;
+  const canNext = activeIndex < reviewCount - 1;
+
+  function handleNext() {
+    if (canNext) {
+      setActiveIndex(activeIndex + 1);
+    }
+  }
+
+  function handlePrev() {
+    if (canPrev) {
+      setActiveIndex(activeIndex - 1);
+    }
+  }
+
   return (
+    // main conteiner
     <div
       className="color-black"
       style={{
@@ -18,7 +40,14 @@ function Card7Testimonials() {
         overflow: "hidden",
       }}
     >
-      <div className="reviews-track">
+      {/* block with message */}
+      <div
+        className="reviews-track"
+        style={{
+          transform: `translateX(${-activeIndex * slideStep}px)`,
+        }}
+      >
+        {/* message + name */}
         <div>
           <div className="review-message">
             <p>
@@ -35,6 +64,7 @@ function Card7Testimonials() {
           </div>
         </div>
 
+        {/* message + name */}
         <div>
           <div className="review-message">
             <p>
@@ -51,6 +81,7 @@ function Card7Testimonials() {
           </div>
         </div>
 
+        {/* message + name */}
         <div>
           <div className="review-message">
             <p>
@@ -66,6 +97,59 @@ function Card7Testimonials() {
             <p>Marketing Director at XYZ Corp</p>
           </div>
         </div>
+      </div>
+
+      {/* control buttons */}
+      <div className="reviews-controls">
+        {/* button */}
+        <button
+          type="button"
+          onClick={handlePrev}
+          disabled={!canPrev}
+          aria-label="Предыдущий отзыв"
+        >
+          <img
+            src={canPrev ? arrowCanSlide : arrowCanNOTSlide}
+            style={{
+              transform: canPrev ? "rotate(180deg)" : "none",
+            }}
+            alt=""
+          />
+        </button>
+
+        {/* dots */}
+        <div className="reviews-points">
+          {[0, 1, 2].map((index) => (
+            <button
+              type="button"
+              key={index}
+              onClick={() => setActiveIndex(index)}
+              aria-label={`Отзыв ${index + 1}`}
+              aria-pressed={activeIndex === index}
+            >
+              <img
+                src={activeIndex === index ? pointActive : pointUnactive}
+                alt=""
+              />
+            </button>
+          ))}
+        </div>
+
+        {/* button */}
+        <button
+          type="button"
+          onClick={handleNext}
+          disabled={!canNext}
+          aria-label="Следующий отзыв"
+        >
+          <img
+            src={canNext ? arrowCanSlide : arrowCanNOTSlide}
+            style={{
+              transform: canNext ? "none" : "rotate(180deg)",
+            }}
+            alt=""
+          />
+        </button>
       </div>
     </div>
   );
